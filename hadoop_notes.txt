@@ -1,0 +1,33 @@
+Q.1 What is Hadoop?
+
+Q.2 What is difference between RDBMs and MapReduce?
+Data size Gigabytes Petabytes
+Access Interactive and batch Batch
+Updates Read and write many times Write once, read many times
+Transactions ACID None
+
+Q.3 How to use jar file in hadoop?
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
+ -input input/ncdc/sample.txt \
+ -output output \
+ -mapper ch02-mr-intro/src/main/ruby/max_temperature_map.rb \
+ -reducer ch02-mr-intro/src/main/ruby/max_temperature_reduce.rb
+
+Q.4 What is HDFS Federation?
+
+Q.5 What is HDFS High Availability?
+
+Q.6 What HDFS cli commands?
+
+Q.7 What is YARN?
+YARN provides its core services via two types of long-running daemon: a resource
+manager (one per cluster) to manage the use of resources across the cluster, and node
+managers running on all the nodes in the cluster to launch and monitor containers. A
+container executes an application-specific process with a constrained set of resources
+
+Q.8 Scheduler Options in Yarn?
+FIFO
+Capacity
+Fair
+
+Q.9 
